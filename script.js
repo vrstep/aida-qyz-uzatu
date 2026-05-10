@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             // Replace with your own Google Apps Script URL
-            const scriptURL = 'https://script.google.com/macros/s/AKfycby2hkCQ4GBkd46TxYi-m3LYEYbi4MFxG68hk6BuewBnVFOCgx3DCd_QRU4mgwf9zc0/exec';
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyumghbao9RRQib5MLxvsLAdAdAi6r7FpYN3s_QKnC17ZnZFEM0ueLCWs4pn6DwU6M/exec';
 
             fetch(scriptURL, { method: 'POST', body: formData })
                 .then(response => {
