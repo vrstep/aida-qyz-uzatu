@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қыз Ұзату — Аида</title>
+    <meta name="description" content="Аиданың қыз ұзату тойына шақырамыз. Біздің ерекше күнімізді бірге атап өтейік.">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Қыз Ұзату — Аида">
+    <meta property="og:description" content="Аиданың қыз ұзату тойына шақырамыз.">
+    <meta property="og:image" content="assets/images/peony-hero.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Language Selector Overlay -->
+    <div class="lang-overlay" id="langOverlay">
+        <div class="lang-overlay-content">
+            <div class="lang-peony">
+                <img src="assets/images/peony-hero.png" alt="White Peony" class="lang-peony-img">
+            </div>
+            <p class="lang-title-line">ТІЛДІ ТАҢДАҢЫЗ</p>
+            <p class="lang-title-line lang-title-sub">ВЫБЕРИТЕ ЯЗЫК</p>
+            <div class="lang-buttons">
+                <button class="lang-btn" id="btnLangKz" data-lang="kk">
+                    <span>KZ</span>
+                </button>
+                <button class="lang-btn" id="btnLangRu" data-lang="ru">
+                    <span>RU</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating peony petals background -->
+    <div class="floating-petals" id="floatingPetals" aria-hidden="true"></div>
+
+    <!-- Navigation dots -->
+    <nav class="nav-dots" id="navDots" aria-label="Section navigation">
+        <a href="#hero" class="nav-dot active" data-section="hero" aria-label="Hero section"></a>
+        <a href="#invitation" class="nav-dot" data-section="invitation" aria-label="Invitation section"></a>
+        <a href="#details" class="nav-dot" data-section="details" aria-label="Details section"></a>
+        <a href="#location" class="nav-dot" data-section="location" aria-label="Location section"></a>
+        <a href="#rsvp" class="nav-dot" data-section="rsvp" aria-label="RSVP section"></a>
+    </nav>
+
+    <!-- SECTION 1: Hero -->
+    <section id="hero" class="section hero">
+        <div class="hero-bg-flowers">
+            <img src="assets/images/peony-hero.png" alt="" class="hero-flower hero-flower-left" aria-hidden="true">
+            <img src="assets/images/peony-hero.png" alt="" class="hero-flower hero-flower-right" aria-hidden="true">
+        </div>
+
+        <div class="hero-top-border">
+            <img src="assets/images/peony-border.png" alt="" class="hero-border-img" aria-hidden="true">
+        </div>
+
+        <div class="hero-content animate-on-scroll">
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Қыз Ұзату</p>
+            <h1 class="hero-name script-font">Аида</h1>
+            <div class="hero-date-wrapper">
+                <div class="decorative-line"></div>
+                <p class="hero-date" data-i18n="heroDate">28 тамыз 2026</p>
+                <div class="decorative-line"></div>
+            </div>
+        </div>
+
+        <div class="hero-bottom-border">
+            <img src="assets/images/peony-border.png" alt="" class="hero-border-img flipped" aria-hidden="true">
+        </div>
+
+        <a href="#invitation" class="scroll-indicator" aria-label="Scroll to next section">
+            <span class="scroll-arrow"></span>
+            <span class="scroll-arrow"></span>
+        </a>
+    </section>
+    <!-- SECTION 2: Invitation Letter from Bride -->
+    <section id="invitation" class="section invitation">
+        <div class="section-inner">
+            <div class="invitation-content animate-on-scroll">
+                <div class="invitation-flower-accent">
+                    <img src="assets/images/peony-hero.png" alt="" class="invitation-peony" aria-hidden="true">
+                </div>
+
+                <h2 class="section-title script-font" data-i18n="invitationTitle">Құрметті қонақтар!</h2>
+                <div class="invitation-divider">
+                    <svg class="divider-ornament" width="200" height="20" viewBox="0 0 200 20" fill="none">
+                        <path d="M0 10 Q50 0 100 10 T200 10" stroke="#d4a8b0" stroke-width="1" fill="none"
+                            opacity="0.6" />
+                        <circle cx="100" cy="10" r="3" fill="#d4a8b0" opacity="0.6" />
+                        <circle cx="60" cy="7" r="2" fill="#d4a8b0" opacity="0.4" />
+                        <circle cx="140" cy="7" r="2" fill="#d4a8b0" opacity="0.4" />
+                    </svg>
+                </div>
+                <p class="invitation-text" data-i18n="invitationText1">
+                    Өмірімнің ең бақытты кезеңіне қадам басуға дайынмын.
+                    Жүрегімде шексіз қуаныш пен алғыс сезімі бар.
+                </p>
+                <p class="invitation-text" data-i18n="invitationText2">
+                    Сіздерді менің қыз ұзату тойыма шақырамын.
+                    Осы ерекше күнді бірге атап өтсек деп тілеймін.
+                    Сіздердің қатысуыңыз маған ерекше қуаныш сыйлайды.
+                </p>
+                <p class="invitation-text highlight-text" data-i18n="invitationHighlight">
+                    Сіздерді көруге асыға күтемін! 🤍
+                </p>
+                <div class="signature">
+                    <span class="script-font" data-i18n="signature">Сүйіспеншілікпен, Аида</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Date & Time with Calendar -->
+    <section id="details" class="section details">
+        <div class="section-inner">
+            <h2 class="section-title animate-on-scroll script-font" data-i18n="detailsTitle">Той күні</h2>
+            <div class="details-card-wrapper">
+                <div class="detail-card animate-on-scroll" id="calendarCard">
+                    <div class="card-icon">
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#d4a8b0" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="dateTimeTitle">Күні мен уақыты</h3>
+                    <div class="calendar-widget">
+                        <div class="calendar-header">
+                            <span data-i18n="calendarMonth">Тамыз 2026</span>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="cal-day-name" data-i18n="dayMon">Дс</div>
+                            <div class="cal-day-name" data-i18n="dayTue">Сс</div>
+                            <div class="cal-day-name" data-i18n="dayWed">Ср</div>
+                            <div class="cal-day-name" data-i18n="dayThu">Бс</div>
+                            <div class="cal-day-name" data-i18n="dayFri">Жм</div>
+                            <div class="cal-day-name" data-i18n="daySat">Сн</div>
+                            <div class="cal-day-name" data-i18n="daySun">Жс</div>
+
+                            <!-- Empty cells offset (Aug 2026 starts on Saturday) -->
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <div class="cal-day">1</div>
+                            <div class="cal-day">2</div>
+                            <div class="cal-day">3</div>
+                            <div class="cal-day">4</div>
+                            <div class="cal-day">5</div>
+                            <div class="cal-day">6</div>
+                            <div class="cal-day">7</div>
+                            <div class="cal-day">8</div>
+                            <div class="cal-day">9</div>
+                            <div class="cal-day">10</div>
+                            <div class="cal-day">11</div>
+                            <div class="cal-day">12</div>
+                            <div class="cal-day">13</div>
+                            <div class="cal-day">14</div>
+                            <div class="cal-day">15</div>
+                            <div class="cal-day">16</div>
+                            <div class="cal-day">17</div>
+                            <div class="cal-day">18</div>
+                            <div class="cal-day">19</div>
+                            <div class="cal-day">20</div>
+                            <div class="cal-day">21</div>
+                            <div class="cal-day">22</div>
+                            <div class="cal-day">23</div>
+                            <div class="cal-day">24</div>
+                            <div class="cal-day">25</div>
+                            <div class="cal-day">26</div>
+                            <div class="cal-day">27</div>
+                            <div class="cal-day highlight-day">28</div>
+                            <div class="cal-day">29</div>
+                            <div class="cal-day">30</div>
+                            <div class="cal-day">31</div>
+                        </div>
+                    </div>
+                    <p class="detail-time">
+                        <span data-i18n="startTime">Басталуы</span> <strong>19:00</strong>
+                    </p>
+
+                    <!-- Countdown Timer -->
+                    <div class="countdown-timer" id="countdownTimer">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countDays">00</div>
+                            <div class="countdown-label" data-i18n="labelDays">Күн</div>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countHours">00</div>
+                            <div class="countdown-label" data-i18n="labelHours">Сағат</div>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countMinutes">00</div>
+                            <div class="countdown-label" data-i18n="labelMinutes">Минут</div>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="countSeconds">00</div>
+                            <div class="countdown-label" data-i18n="labelSeconds">Секунд</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Restaurant Location -->
+    <section id="location" class="section location-section">
+        <div class="section-inner">
+            <h2 class="section-title animate-on-scroll script-font" data-i18n="locationTitle">Тойхана</h2>
+            <div class="location-card animate-on-scroll">
+                <div class="location-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4a8b0" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3 class="venue-name">Arnau мейрамханасы</h3>
+                <p class="venue-address" data-i18n="venueAddress">Орал қ., Тәуелсіздік көшесі, 28​</p>
+                <div class="venue-details">
+                    <p class="venue-time">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4a8b0" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span data-i18n="venueTime">18:00</span>
+                    </p>
+                    <p class="venue-date-detail">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4a8b0" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span data-i18n="venueDateDetail">30 тамыз 2026, жексенбі</span>
+                    </p>
+                </div>
+                <a href="https://2gis.kz/uralsk/geo/70000001090572282" target="_blank" rel="noopener noreferrer"
+                    class="map-btn" id="mapLink">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span data-i18n="mapLink">2GIS-те ашу</span>
+                </a>
+                <div class="location-flower-accent">
+                    <img src="assets/images/peony-border.png" alt="" class="location-border-img" aria-hidden="true">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: RSVP Form -->
+    <section id="rsvp" class="section rsvp">
+        <div class="section-inner">
+            <h2 class="section-title animate-on-scroll script-font" data-i18n="rsvpTitle">Растау</h2>
+            <p class="rsvp-subtitle animate-on-scroll" data-i18n="rsvpSubtitle">
+                Тойға қатыса алатыныңызды хабарлаңыз
+            </p>
+            <form id="rsvpForm" class="rsvp-form animate-on-scroll" novalidate>
+                <div class="form-group">
+                    <label for="guestName" class="form-label" data-i18n="labelName">Сіздің атыңыз</label>
+                    <input type="text" id="guestName" name="name" class="form-input"
+                        data-i18n-placeholder="placeholderName" placeholder="Аты-жөні" required autocomplete="name">
+                    <span class="input-border"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-i18n="labelAttendance">Сіз қатыса аласыз ба?</label>
+                    <div class="attendance-options">
+                        <label class="attendance-option" for="attend-yes">
+                            <input type="radio" id="attend-yes" name="attendance" value="yes" required>
+                            <span class="option-card">
+                                <span class="option-emoji">🤍</span>
+                                <span class="option-text" data-i18n="optionYes">Иә, келемін</span>
+                            </span>
+                        </label>
+                        <label class="attendance-option" for="attend-no">
+                            <input type="radio" id="attend-no" name="attendance" value="no">
+                            <span class="option-card">
+                                <span class="option-emoji">😢</span>
+                                <span class="option-text" data-i18n="optionNo">Келе алмаймын</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestPhone" class="form-label" data-i18n="labelPhone">Телефон нөмірі</label>
+                    <div class="phone-input-wrapper">
+                        <span class="phone-prefix">+7</span>
+                        <input type="tel" id="guestPhone" name="phone" class="form-input phone-input"
+                            placeholder="(777) 123-45-67" required autocomplete="tel">
+                    </div>
+                    <span class="input-border"></span>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text" data-i18n="submitBtn">Жауапты жіберу</span>
+                </button>
+
+                <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+            </form>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-flower">
+                    <img src="assets/images/peony-hero.png" alt="" class="footer-peony" aria-hidden="true">
+                </div>
+                <p class="footer-text" data-i18n="footer">Сүйіспеншілікпен, Аида 🤍 2026</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
